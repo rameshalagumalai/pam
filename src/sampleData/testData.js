@@ -1,0 +1,17 @@
+export const transactions = [
+    { title: "Breakfast", amount: 120, category: "success", account: "Cash", moneyIn: true },
+    { title: "Lunch", amount: 200, category: "info", account: "HDFC", moneyIn: false },
+    { title: "Dinner", amount: 150, category: "warning", account: "SBI", moneyIn: true },
+    { title: "Snacks", amount: 80, category: "primary", account: "Cash", moneyIn: false },
+    { title: "Groceries", amount: 300, category: "danger", account: "HDFC", moneyIn: true },
+    { title: "Fuel", amount: 500, category: "dark", account: "SBI", moneyIn: false },
+    { title: "Electricity Bill", amount: 1200, category: "success", account: "Cash", moneyIn: false },
+    { title: "Internet Bill", amount: 600, category: "info", account: "HDFC", moneyIn: true },
+    { title: "Travel", amount: 2000, category: "warning", account: "SBI", moneyIn: false },
+    { title: "Shopping", amount: 1500, category: "primary", account: "Cash", moneyIn: true },
+    { title: "Movie", amount: 300, category: "danger", account: "HDFC", moneyIn: false },
+    { title: "Gym", amount: 1000, category: "dark", account: "SBI", moneyIn: true },
+    { title: "Dining Out", amount: 700, category: "success", account: "Cash", moneyIn: false },
+    { title: "Stationery", amount: 50, category: "info", account: "HDFC", moneyIn: true },
+    { title: "Loan Payment", amount: 2500, category: "warning", account: "SBI", moneyIn: false },
+];
