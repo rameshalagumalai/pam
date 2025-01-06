@@ -1,0 +1,14 @@
+export default function DropDown({ bg, icon, text }) {
+    return (
+        <div class="btn-group w-100 text-end">
+            <button type="button" class={`btn dropdown-toggle bg-${bg}-subtle rounded-pill text-start px-3`} data-bs-toggle="dropdown" aria-expanded="false">
+                <i class={`fa-solid fa-${icon} text-${bg}`} /> {text}
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="/">Action</a></li>
+                <li><a class="dropdown-item" href="/">Another action</a></li>
+                <li><a class="dropdown-item" href="/">Something else here</a></li>
+            </ul>
+        </div>
+    );
+}

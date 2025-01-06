@@ -23,6 +23,10 @@ a {
   font-weight: 500;
 }
 
+.f-400 {
+  font-weight: 400;
+}
+
 .small-text {
   font-size: 0.75rem;
 }
@@ -96,4 +100,22 @@ a {
 
 .row {
   margin: 0;
+}
+
+.h-90 {
+  height: 95% !important;
+}
+
+.amount-input:focus {
+  outline: 0;
+}
+
+.display-1 {
+  font-size: 4rem;
+}
+
+.btn-group-float {
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
 }
