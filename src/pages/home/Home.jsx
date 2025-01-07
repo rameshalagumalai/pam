@@ -16,7 +16,7 @@ export default function Home({ setIsManual }) {
                         <p>Hello,</p>
                         <h4 className="f-600">Ramesh A</h4>
                     </div>
-                    <div className="d-flex align-items-center justify-content-center hw-2-5 rounded-circle bg-primary-subtle ms-auto" onClick={() => { navigate("/scan-qr"); setIsManual(true); }}>
+                    <div className="d-flex align-items-center justify-content-center hw-2-5 rounded-circle bg-primary-subtle ms-auto" onClick={()=>navigate("/profile")}>
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </div>

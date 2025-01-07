@@ -6,6 +6,8 @@ import Home from './pages/home/Home';
 import ScanQR from './pages/qr/ScanQR';
 import NewTransactionCanvas from './components/NewTransactionCanvas';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Transactions from './pages/transactions/Transactions';
+import Profile from './pages/profile/Profile';
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home setIsManual={setIsManual} />} />
           <Route path="/scan-qr" element={<ScanQR setIsManual={setIsManual} setPayeeName={setPayeeName} />} />
+          <Route path='/transactions' element={<Transactions />} />
+          <Route path='/profile' element={<Profile />} />
         </Routes>
       </BrowserRouter>
       <NewTransactionCanvas isManual={isManual} payeeName={payeeName} />

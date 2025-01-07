@@ -15,7 +15,7 @@ export default function ScanQR({ setIsManual, setPayeeName }) {
     };
 
     return (
-        <div className="bg-dark vh-100 d-flex flex-column p-3">
+        <div className="bg-black vh-100 d-flex flex-column p-3">
             <Html5QrCodePlugin
                 fps={10}
                 qrbox={250}
