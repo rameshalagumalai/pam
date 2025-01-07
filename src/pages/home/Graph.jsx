@@ -5,7 +5,7 @@ export default function Graph() {
         <div className="bg-dark text-light d-flex flex-column rounded-4 py-2 px-3" style={{height: "11rem"}}>
             <div className="d-flex align-items-center">
                 <p className="f-500"><span className="small-text text-secondary">Total</span> ₹35,000</p>
-                <Link to="/stats" className="btn btn-sm btn-primary ms-auto small-text py-0 px-1">View stats</Link>
+                <Link to="/stats" className="btn btn-sm btn-outline-light ms-auto small-text py-0 px-1">View stats</Link>
             </div>
             <div className="h-100 d-flex justify-content-between mt-2">
                 <Bar height={25} color="info" />

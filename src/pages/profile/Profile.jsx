@@ -3,7 +3,7 @@ import PreferenceItem from "./PreferenceItem";
 export default function Profile() {
     return (
         <div className="vh-100 d-flex flex-column px-3 pb-3">
-            <h4 className="f-600 pt-3">Profile</h4>
+            <h4 className="f-600 mt-3">Profile</h4>
             <div className="d-flex flex-column align-items-center mt-5 mb-3">
                 <div className="d-flex align-items-center justify-content-center hw-5 bg-primary-subtle bg-gradient rounded-circle">
                     <i class="fa-solid fa-user fa-2x"></i>

@@ -4,7 +4,7 @@ export default function Transaction({ transaction }) {
     // const transactionTypeClassStyle = transaction.moneyIn ? "left text-success" : "right text-danger";
 
     return (
-        <div className="d-flex align-items-center py-2">
+        <div className="d-flex align-items-center py-2 mt-1">
             <div className="d-flex position-relative">
                 <div className={`rounded-circle hw-3 bg-${category}-subtle d-flex align-items-center justify-content-center`}>
                     <i class={`fa-solid fa-bowl-food text-${category}`}></i>

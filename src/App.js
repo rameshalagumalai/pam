@@ -22,7 +22,7 @@ function App() {
     <div className={`App ${style}`}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home setIsManual={setIsManual} />} />
+          <Route path="/" element={<Home />} />
           <Route path="/scan-qr" element={<ScanQR setIsManual={setIsManual} setPayeeName={setPayeeName} />} />
           <Route path='/transactions' element={<Transactions />} />
           <Route path='/profile' element={<Profile />} />
