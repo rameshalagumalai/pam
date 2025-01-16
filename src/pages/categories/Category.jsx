@@ -1,4 +1,6 @@
-export default function Category({ color, icon, name, isPrimary, type }) {
+import OptionDropDown from "../../components/OptionDropDown";
+
+export default function Category({ color, icon, name, isPrimary, type, isEditModal, setIsEditModal }) {
     return (
         <div className="d-flex align-items-center bg-white rounded-4 p-3 mt-3">
             <div className={`hw-3 rounded-4 d-flex align-items-center justify-content-center bg-${color}-subtle text-${color}`}>
@@ -21,7 +23,7 @@ export default function Category({ color, icon, name, isPrimary, type }) {
                     )
                 }
             </div>
-            <button className="btn btn-outline-secondary btn-sm rounded-3 ms-auto"><i class="fa-solid fa-pen"></i></button>
+            <OptionDropDown isPrimary={isPrimary} type="category" isEditModal={isEditModal} setIsEditModal={setIsEditModal} />
         </div>
     );
 }

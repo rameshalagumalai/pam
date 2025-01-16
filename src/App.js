@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Transactions from './pages/transactions/Transactions';
 import Profile from './pages/profile/Profile';
 import Categories from './pages/categories/Categories';
+import Accounts from './pages/accounts/Accounts';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path='/transactions' element={<Transactions />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/categories' element={<Categories />} />
+          <Route path='/accounts' element={<Accounts />} />
         </Routes>
       </BrowserRouter>
       <NewTransactionCanvas isManual={isManual} payeeName={payeeName} />

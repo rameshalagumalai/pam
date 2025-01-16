@@ -8,6 +8,7 @@ export default function DropDown({ bg, icon, text }) {
                 <li><a class="dropdown-item" href="/">Action</a></li>
                 <li><a class="dropdown-item" href="/">Another action</a></li>
                 <li><a class="dropdown-item" href="/">Something else here</a></li>
+                <li className="dropdown-item"><button className="btn btn-light w-100 btn-sm small-text">New</button></li>
             </ul>
         </div>
     );
