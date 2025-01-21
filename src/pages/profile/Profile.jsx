@@ -1,5 +1,6 @@
 import EditProfileModal from "./EditProfileModal";
 import PreferenceItem from "./PreferenceItem";
+import SignOutModal from "./SignOutModal";
 
 export default function Profile() {
     return (
@@ -10,7 +11,7 @@ export default function Profile() {
                     <i class="fa-solid fa-user fa-2x"></i>
                 </div>
                 <p className="mt-2">Ramesh Alagumalai</p>
-                <p className="text-secondary small-text">rameshalagumalai23@gmail.com</p>
+                <p className="text-secondary small-text mt-1">rameshalagumalai23@gmail.com</p>
                 <button type="button" className="btn btn-sm btn-primary small-text rounded-circle hw-2 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                     <i class="fa-solid fa-pen"></i>
                 </button>
@@ -19,9 +20,10 @@ export default function Profile() {
             <PreferenceItem name="Categories" to="/categories" color="warning" icon="shapes" />
             <PreferenceItem name="QR" to="/qr" color="dark" icon="qrcode" />
 
-            <button className="btn btn-sm btn-outline-danger rounded-3 mt-auto mx-auto">Sign out</button>
+            <button className="btn btn-sm btn-outline-danger rounded-3 mt-auto mx-auto" data-bs-toggle="modal" data-bs-target="#signOutModal">Sign out</button>
 
             <EditProfileModal />
+            <SignOutModal />
         </div>
     );
 }

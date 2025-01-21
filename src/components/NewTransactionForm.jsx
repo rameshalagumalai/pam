@@ -1,6 +1,11 @@
 import DropDown from "./DropDown";
 
 export default function NewTransactionForm({ isManual, payeeName }) {
+
+    function handleQrScannedData() {
+        window.location.href = "upi://pay?pa=sample@sample&pn=Ramesh A&am=10&tn=Notes";
+    }
+
     return (
         <form className="offcanvas-body small text-center bg-light">
                 <div className="d-flex gap-2">
@@ -16,7 +21,7 @@ export default function NewTransactionForm({ isManual, payeeName }) {
                 <div className="mt-5 d-flex flex-column align-items-center">
                     {/* <span className="text-secondary f-400">₹</span> */}
                     <h6 className="text-secondary small-text">{isManual ? "Manual expense" : <><i class="fa-solid fa-qrcode"></i> {payeeName}</>}</h6>
-                    <input type="number" className="amount-input border-0 display-1 f-600 text-center w-50 bg-light" placeholder="0" />
+                    <input type="number" className="amount-input border-0 display-1 f-500 text-center w-50 bg-light" placeholder="0" />
                     <input type="text" className="form-control rounded-pill small-text text-center py-1 w-25" placeholder="Notes" />
                 </div>
                 <div className="d-flex gap-2 mt-5">
@@ -28,7 +33,7 @@ export default function NewTransactionForm({ isManual, payeeName }) {
                         isManual ?
                             <button className="btn btn-primary btn-lg rounded-4 m-auto mt-5"><i class="fa-solid fa-check"></i></button>
                             :
-                            <button className="btn btn-primary rounded-3 ms-auto mt-5">Proceed <i class="fa-solid fa-arrow-right"></i></button>
+                            <button className="btn btn-primary rounded-3 ms-auto mt-5" onClick={()=>handleQrScannedData()}>Proceed <i class="fa-solid fa-arrow-right"></i></button>
                     }
                 </div>
             </form>

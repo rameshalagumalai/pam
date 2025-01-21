@@ -9,7 +9,7 @@ export default function DeleteModal({ type }) {
                             <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <p className="mt-3">Are you sure you want to delete the {type}?</p>
-                        <button type="button" class="btn btn-sm btn-danger rounded-3 mx-auto mt-3">Delete</button>
+                        <button type="button" class="btn btn-sm btn-danger rounded-3 mx-auto mt-4">Delete</button>
                     </div>
                 </div>
             </form>

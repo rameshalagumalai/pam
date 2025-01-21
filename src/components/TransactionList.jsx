@@ -1,5 +1,6 @@
 import { transactions } from "../sampleData/testData";
 import Transaction from "./Transaction";
+import TransactionModal from "./TransactionModal";
 
 export default function TransactionList() {
     return (
@@ -11,6 +12,7 @@ export default function TransactionList() {
                     )
                 })
             }
+            <TransactionModal />
         </div>
     );
 }
